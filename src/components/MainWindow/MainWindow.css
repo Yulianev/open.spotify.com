@@ -1,8 +1,6 @@
 main {
-    grid-area: main-view/main-view/main-view/right-sidebar;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    background-color: var(--background-base);
     border-radius: 8px;
     display: -webkit-box;
     display: -ms-flexbox;

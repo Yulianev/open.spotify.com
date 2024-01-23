@@ -21,5 +21,5 @@ export default function MainLastMusicList() {
         handleTime()
     }, [])
 
-    return <div>{currentTime}</div>
+    return <div className={styles.welcome_msg}>{currentTime}</div>
 }

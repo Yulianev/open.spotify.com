@@ -15,8 +15,6 @@ aside {
     background-color: #000;
     grid-area: left-sidebar;
     position: relative;
-    width: var(--left-sidebar-width);
-    z-index: var(--left-sidebar-grid-area-z-index);
 
     /* Non selectable */
     -moz-user-select: none;

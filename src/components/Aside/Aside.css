@@ -17,10 +17,17 @@ aside {
     position: relative;
     width: var(--left-sidebar-width);
     z-index: var(--left-sidebar-grid-area-z-index);
+
+    /* Non selectable */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    cursor: pointer;
 }
 .aside-nav {
     padding: 11px 10px;
@@ -42,11 +49,10 @@ button {
     font-size: 16px;
     font-weight: 700;
     gap: 20px;
-}
-.nav-button {
     color: white;
     opacity: 0.6;
     transition: 0.4s;
+    cursor: pointer;
 }
 .nav-button:hover {
     color: white;
@@ -55,12 +61,9 @@ button {
 
 /* Library list */
 .aside-library {
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
+    position: relative;
     background-color: #121212;
     border-radius: 8px;
-    /* height: 100%; */
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-box-flex: 1;
@@ -71,11 +74,22 @@ button {
     min-height: 0;
     padding-top: 0;
     width: 100%;
+    overflow-y: scroll;
+}
+.library-albums-nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
 }
 .library-buttons {
     display: flex;
     justify-content: space-between;
     padding: 8px 16px;
+    top: 0;
+    left: 0;
 }
 .library-button {
     display: flex;
@@ -83,7 +97,7 @@ button {
     align-items: center;
     gap: 8px;
     opacity: 0.6;
-
+    cursor: pointer;
     font-size: 16px;
     font-weight: 700;
 }
@@ -99,7 +113,8 @@ button {
     padding: 8px 13px;
     background-color: #232323;
     border-radius: 90px;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 .library-type-filter > li:not(:last-child) {
     margin-right: 8px;
@@ -107,6 +122,7 @@ button {
 
 .library-serach {
     padding: 8px 16px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -114,14 +130,21 @@ button {
 .library-album-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
+    margin: 0 -8px;
 }
 .library-album-item {
     display: flex;
     gap: 8px;
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 8px;
+}
+.library-album-item:hover {
+    background-color: #222222;
 }
 .library-album-item img {
-    height: 48px;
+    height: 56px;
     border-radius: 5px;
 }
 .library-album-article {

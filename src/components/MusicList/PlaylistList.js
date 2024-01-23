@@ -18,28 +18,28 @@ const libraryPlaylistList = [
     new LibraryPlaylistItem(
         2,
         'Playlist',
-        'ПОХУЙ'.toLowerCase(),
+        'Playlist 2'.toLowerCase(),
         'Yulian',
         'https://i.scdn.co/image/ab67616d00001e02b17d34882944eaf0695153f2'
     ),
     new LibraryPlaylistItem(
         3,
         'Playlist',
-        'ПОХУЙ'.toLowerCase(),
+        'Playlist 3'.toLowerCase(),
         'Yulian',
         'https://i.scdn.co/image/ab67616d00001e02b17d34882944eaf0695153f2'
     ),
     new LibraryPlaylistItem(
         4,
         'Playlist',
-        'ПОХУЙ'.toLowerCase(),
+        'Playlist 4'.toLowerCase(),
         'Yulian',
         'https://i.scdn.co/image/ab67616d00001e02b17d34882944eaf0695153f2'
     ),
     new LibraryPlaylistItem(
         5,
         'Playlist',
-        'ПОХУЙ'.toLowerCase(),
+    'Playlist 5'.toLowerCase(),
         'Yulian',
         'https://i.scdn.co/image/ab67616d00001e02b17d34882944eaf0695153f2'
     ),

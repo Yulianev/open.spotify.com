@@ -12,29 +12,29 @@ export default function AsideLibrary() {
 
     return (
         <div className="aside-library">
-            <div className="library-buttons">
-                <button className="library-button" onClick={changeVisionWindow}>
-                    {window ? (
-                        <IoIosList size="32px" />
-                    ) : (
-                        <IoIosListBox size="32px" />
-                    )}
-                    Your Library
-                </button>
-                <button>
-                    <FiPlus size="22px" />
-                </button>
-                {/* <div>
-          <button>
-            <MdArrowRightAlt size="32px" />
-          </button>
-        </div> */}
+            <div className="library-albums-nav">
+                <div className="library-buttons">
+                    <button
+                        className="library-button"
+                        onClick={changeVisionWindow}
+                    >
+                        {window ? (
+                            <IoIosList size="32px" />
+                        ) : (
+                            <IoIosListBox size="32px" />
+                        )}
+                        Your Library
+                    </button>
+                    <button>
+                        <FiPlus size="22px" />
+                    </button>
+                </div>
+                <ul className="library-type-filter">
+                    <li>Playlists</li>
+                    <li>Artists</li>
+                    <li>Albums</li>
+                </ul>
             </div>
-            <ul className="library-type-filter">
-                <li>Playlists</li>
-                <li>Artists</li>
-                <li>Albums</li>
-            </ul>
 
             <div className="library-serach">
                 <div>

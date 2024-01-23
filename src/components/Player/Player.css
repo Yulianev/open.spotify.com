@@ -10,6 +10,12 @@ footer {
     padding: 0;
     grid-area: now-playing-bar;
     width: 100%;
+    z-index: 2;
+    /* Non selectable */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 /* FOOTER ALBUM */

@@ -1,0 +1,16 @@
+.header_nav_buttons {
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+}
+.header_nav_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+}

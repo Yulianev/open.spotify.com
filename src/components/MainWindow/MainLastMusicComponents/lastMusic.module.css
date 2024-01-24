@@ -1,0 +1,11 @@
+.last_music_grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+.last_music_item {
+    display: flex;
+    max-height: 72px;
+}
+.last_music_item img {
+    height: 100%;
+}

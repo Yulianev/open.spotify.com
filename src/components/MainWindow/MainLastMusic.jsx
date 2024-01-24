@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import styles from './mainLastMusicList.module.css'
+import LastMusicGrid from './MainLastMusicComponents/LastMusicGrid'
 
 export default function MainLastMusicList() {
     // Last heard music Playlists, Artists, Favorite
@@ -21,5 +22,10 @@ export default function MainLastMusicList() {
         handleTime()
     }, [])
 
-    return <div className={styles.welcome_msg}>{currentTime}</div>
+    return (
+        <div>
+            <div className={styles.welcome_msg}>{currentTime}</div>
+            <LastMusicGrid />
+        </div>
+    )
 }

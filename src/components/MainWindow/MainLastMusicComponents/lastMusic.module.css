@@ -1,11 +1,31 @@
 .last_music_grid {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap: 12px;
 }
 .last_music_item {
     display: flex;
-    max-height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 64px;
+    border-radius: 8px;
+    background-color: hsla(0,0%,100%,.07);;
 }
-.last_music_item img {
-    height: 100%;
+
+.last_music_article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+.last_music_article img {
+    height: 64px;
+    border-radius: 8px 0 0 8px;
+}
+.play_button:not(:first-child){
+    border-radius: 50px;
+    fill: #10c553;
+    -webkit-box-shadow: 0 8px 8px rgba(0,0,0,.3);
+    box-shadow: 0 8px 8px rgba(0,0,0,.3);
 }

@@ -7,6 +7,9 @@ export default function LastMusicGrid() {
             <LastMusicItem item={0} />
             <LastMusicItem item={1} />
             <LastMusicItem item={2} />
+            <LastMusicItem item={3} />
+            <LastMusicItem item={4} />
+            <LastMusicItem item={5} />
         </div>
     )
 }

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import styles from './mainLastMusicList.module.css'
 import LastMusicGrid from './MainLastMusicComponents/LastMusicGrid'
 
 export default function MainLastMusicList() {
@@ -23,8 +22,17 @@ export default function MainLastMusicList() {
     }, [])
 
     return (
-        <div>
-            <div className={styles.welcome_msg}>{currentTime}</div>
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                padding: '16px',
+                gap: '8px',
+            }}
+        >
+            <div style={{ fontSize: '2rem', fontWeight: '500' }}>
+                {currentTime}
+            </div>
             <LastMusicGrid />
         </div>
     )

@@ -18,6 +18,7 @@ main {
 }
 
 .main-window {
+    overflow-y: scroll;
 }
 
 .main_header {

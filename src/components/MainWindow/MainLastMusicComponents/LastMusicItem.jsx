@@ -1,11 +1,16 @@
 import styles from './lastMusic.module.css'
 import libraryPlaylistList from '../../MusicList/PlaylistList.js'
-import {MdOutlinePauseCircleFilled, MdOutlinePlayCircleFilled} from 'react-icons/md'
+import {
+    MdOutlinePauseCircleFilled,
+    MdOutlinePlayCircleFilled,
+} from 'react-icons/md'
 import PlayerControls from '../../Player/PlayerControls.jsx'
+import { useState } from 'react'
 
 const LastMusicItem = (props) => {
     // eslint-disable-next-line react/prop-types
     const { item } = props
+
     return (
         <div
             className={styles.last_music_item}
@@ -19,7 +24,17 @@ const LastMusicItem = (props) => {
                 </strong>
             </div>
             <button>
-                {PlayerControls.playMusic ? <MdOutlinePauseCircleFilled size="56px" className={styles.play_button}/> : <MdOutlinePlayCircleFilled size="56px" className={styles.play_button}/>}
+                {PlayerControls.playMusic ? (
+                    <MdOutlinePauseCircleFilled
+                        size="56px"
+                        className={styles.play_button}
+                    />
+                ) : (
+                    <MdOutlinePlayCircleFilled
+                        size="56px"
+                        className={styles.play_button}
+                    />
+                )}
             </button>
         </div>
     )

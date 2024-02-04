@@ -4,7 +4,7 @@ import {
     MdOutlinePauseCircleFilled,
     MdOutlinePlayCircleFilled,
 } from 'react-icons/md'
-import PlayerControls from '../../Player/PlayerControls.jsx'
+import PlayerControls from '../../player/PlayerControls.jsx'
 import { useState } from 'react'
 
 const LastMusicItem = (props) => {

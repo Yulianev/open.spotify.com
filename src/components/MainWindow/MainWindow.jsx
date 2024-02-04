@@ -10,6 +10,8 @@ export default function MainWindow() {
             <MainLastMusicList />
             <MusicShelf title="Music for you" />
             <MusicShelf title="Music for you" />
+            <MusicShelf title="Music for you" />
+            <MusicShelf title="Music for you" />
         </main>
     )
 }

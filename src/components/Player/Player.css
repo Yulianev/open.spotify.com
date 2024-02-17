@@ -90,21 +90,6 @@ svg.active {
     }
 }
 
-/* TODO DOT AFTER */
-/* svg.active:after {
-  background-color: #10c553;
-  border-radius: 50%;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 4px;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  width: 4px;
-} */
-
 .main-player-slider {
     display: flex;
     align-items: center;

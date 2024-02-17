@@ -5,10 +5,9 @@ import {
     MdOutlinePlayCircleFilled,
 } from 'react-icons/md'
 import PlayerControls from '../../player/PlayerControls.jsx'
-import { useState } from 'react'
+
 
 const LastMusicItem = (props) => {
-    // eslint-disable-next-line react/prop-types
     const { item } = props
 
     return (

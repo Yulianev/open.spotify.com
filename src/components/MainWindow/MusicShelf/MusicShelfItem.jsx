@@ -1,5 +1,16 @@
-import React from 'react'
+// import React from 'react'
 
+import PropTypes from 'prop-types'
+
+/* 
+ = {
+    id: Number,
+    type: String,
+    title: String,
+    creator: String,
+    img: String
+}
+*/
 export default function MusicShelfItem(props) {
     // const { id, title, creator, img } = this.props
     return (
@@ -12,8 +23,6 @@ export default function MusicShelfItem(props) {
                 padding: '16px',
                 gap: '16px',
                 backgroundColor: '#161616',
-                webkitBoxShadow: '0px 0px 5px 0px rgba(0,0,0,0.3)',
-                mozBoxShadow: '0px 0px 5px 0px rgba(0,0,0,0.3)',
                 boxShadow: '0px 0px 5px 0px rgba(0,0,0,0.3)',
                 borderRadius: '8px',
             }}
@@ -22,8 +31,6 @@ export default function MusicShelfItem(props) {
                 style={{
                     borderRadius: '8px',
                     width: '100%',
-                    webkitBoxShadow: '0px 5px 15px 0px rgba(0,0,0,0.7)',
-                    mozBoxShadow: '0px 5px 15px 0px rgba(0,0,0,0.7)',
                     boxShadow: '0px 5px 15px 0px rgba(0,0,0,0.7)',
                 }}
                 src={props.img}
@@ -37,4 +44,11 @@ export default function MusicShelfItem(props) {
             </article>
         </div>
     )
+}
+
+
+MusicShelfItem.propTypes = {
+    img: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    creator: PropTypes.string
 }

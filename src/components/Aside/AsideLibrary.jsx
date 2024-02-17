@@ -35,7 +35,7 @@ export default function AsideLibrary() {
                 </ul>
             </div>
 
-            <div className="library-serach">
+            <div className="library-search">
                 <div>
                     <input type="search" name="" id="" />
                     <button>Recents</button>

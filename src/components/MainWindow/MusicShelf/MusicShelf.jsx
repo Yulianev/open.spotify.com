@@ -1,6 +1,7 @@
-import React from 'react'
+// import React from 'react'
 import MusicShelfItem from './MusicShelfItem'
 import libraryPlaylistList from '../../MusicList/PlaylistList'
+import PropTypes from 'prop-types'
 
 export default function MusicShelf(props) {
     const shelfList = libraryPlaylistList.map((item, index) => {
@@ -39,4 +40,8 @@ export default function MusicShelf(props) {
             </div>
         </div>
     )
+}
+
+MusicShelf.propTypes = {
+    title: PropTypes.string
 }

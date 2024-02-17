@@ -51,6 +51,7 @@ button {
     opacity: 0.6;
     transition: 0.4s;
     cursor: pointer;
+    text-decoration: none;
 }
 .nav-button:hover {
     color: white;
@@ -73,6 +74,13 @@ button {
     padding-top: 0;
     width: 100%;
     overflow-y: scroll;
+}
+
+
+.aside-library::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
 }
 .library-albums-nav {
     position: absolute;
@@ -118,7 +126,7 @@ button {
     margin-right: 8px;
 }
 
-.library-serach {
+.library-search {
     padding: 8px 16px;
     padding-top: 110px;
     display: flex;

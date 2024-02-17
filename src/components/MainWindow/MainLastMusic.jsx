@@ -7,7 +7,6 @@ export default function MainLastMusicList() {
 
     const handleTime = () => {
         let hours = new Date().getHours()
-        console.log(hours)
         if (hours < 12) {
             setCurrentTime('Доброе утро')
         } else if (hours >= 12 && hours < 18) {

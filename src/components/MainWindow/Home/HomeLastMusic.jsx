@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react'
-import LastMusicGrid from './MainLastMusicComponents/LastMusicGrid'
+import LastMusicGrid from './HomeLastMusicComponent/LastMusicGrid'
 
-export default function MainLastMusicList() {
+export default function HomeLastMusicList() {
     // Last heard music Playlists, Artists, Favorite
     const [currentTime, setCurrentTime] = useState('Доброе утро')
 
     const handleTime = () => {
         let hours = new Date().getHours()
         if (hours < 12) {
-            setCurrentTime('Доброе утро')
+            setCurrentTime('Good morning')
         } else if (hours >= 12 && hours < 18) {
-            setCurrentTime('Добрый день')
+            setCurrentTime('Good afternoon')
         } else if (hours >= 18 && hours <= 24) {
-            setCurrentTime('Добрый вечер')
+            setCurrentTime('Good evening')
         }
     }
 

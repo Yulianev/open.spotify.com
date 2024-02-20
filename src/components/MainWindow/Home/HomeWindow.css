@@ -17,11 +17,11 @@ main {
     padding: 4px;
 }
 
-.main-window {
+.home-window {
     overflow-y: scroll;
 }
 
-.main_header {
+.home_header {
     padding: 12px 20px;
     display: flex;
     justify-content: space-between;

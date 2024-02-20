@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styles from './profile.module.css'
 import { RiAccountCircleLine } from 'react-icons/ri'
 

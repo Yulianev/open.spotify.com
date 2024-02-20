@@ -1,12 +1,12 @@
 // routes.js
 
-import MainWindow from '../MainWindow/MainWindow'
-import Search from '../Pages/Search'
+import HomeWindow from '../MainWindow/Home/HomeWindow'
+import Search from '../MainWindow/Search/Search'
 
 export const routes = [
   {
     path: "/",
-    element: <MainWindow />
+    element: <HomeWindow />
   },
   {   
     path: "/search",

@@ -1,6 +1,5 @@
-// import React from 'react'
 import MusicShelfItem from './MusicShelfItem'
-import libraryPlaylistList from '../../MusicList/PlaylistList'
+import libraryPlaylistList from '../../../MusicList/PlaylistList'
 import PropTypes from 'prop-types'
 
 export default function MusicShelf(props) {

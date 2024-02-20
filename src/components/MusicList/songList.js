@@ -1,3 +1,5 @@
+import './PlaylistList.js'
+
 const songList = [
     {
         id: 1,

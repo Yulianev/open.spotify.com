@@ -1,18 +1,6 @@
-// import React from 'react'
-
 import PropTypes from 'prop-types'
 
-/* 
- = {
-    id: Number,
-    type: String,
-    title: String,
-    creator: String,
-    img: String
-}
-*/
 export default function MusicShelfItem(props) {
-    // const { id, title, creator, img } = this.props
     return (
         <div
             style={{

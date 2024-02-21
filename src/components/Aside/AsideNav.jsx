@@ -8,13 +8,13 @@ export default function AsideNav() {
     return (
         <>
             <nav className="aside-nav">
-                <Link to='/'>
+                <Link to="/" style={{ textDecoration: 'none' }}>
                     <button className="nav-button">
                         <IoMdHome size="32px" />
                         Home
                     </button>
                 </Link>
-                <Link to='/search'>
+                <Link to="/search" style={{ textDecoration: 'none' }}>
                     <button className="nav-button">
                         <IoMdSearch size="32px" />
                         Search
@@ -25,6 +25,5 @@ export default function AsideNav() {
                 <Route path='/' element={<HomePage />}/>
             </Routes> */}
         </>
-        
     )
 }

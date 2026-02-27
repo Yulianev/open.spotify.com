@@ -10,15 +10,15 @@ function App() {
     return (
         <>
             <Aside />
-                <Routes>
-                    {routes.map((route) => (
-                        <Route 
-                            key={route.path}
-                            path={route.path} 
-                            element={route.element}
-                        />
-                    ))}
-                </Routes>
+            <Routes>
+                {routes.map((route) => (
+                    <Route
+                        key={route.path}
+                        path={route.path}
+                        element={route.element}
+                    />
+                ))}
+            </Routes>
             <Player />
         </>
     )

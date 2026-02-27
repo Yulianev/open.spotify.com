@@ -34,9 +34,8 @@ export default function MusicShelfItem(props) {
     )
 }
 
-
 MusicShelfItem.propTypes = {
     img: PropTypes.string.isRequired,
     title: PropTypes.string,
-    creator: PropTypes.string
+    creator: PropTypes.string,
 }

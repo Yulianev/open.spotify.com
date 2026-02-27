@@ -8,17 +8,16 @@ import {
 import PlayerControls from '../../../player/PlayerControls.jsx'
 import { useState } from 'react'
 
-
 const LastMusicItem = (props) => {
-    const [hover, setHover] = useState(false);
+    const [hover, setHover] = useState(false)
 
     const handleMouseEnter = () => {
-        setHover(true);
-      }
-    
-      const handleMouseLeave = () => {
-        setHover(false);
-      }
+        setHover(true)
+    }
+
+    const handleMouseLeave = () => {
+        setHover(false)
+    }
 
     const { item } = props
 
@@ -36,19 +35,19 @@ const LastMusicItem = (props) => {
                         libraryPlaylistList[item].title.slice(1)}
                 </strong>
             </div>
-            <button style={
-                hover
-                ?
-                {
-                    opacity: '1', 
-                    transition: '0.3s all'
+            <button
+                style={
+                    hover
+                        ? {
+                              opacity: '1',
+                              transition: '0.3s all',
+                          }
+                        : {
+                              opacity: '0',
+                              transition: '0.3s all',
+                          }
                 }
-                : 
-                {
-                    opacity: '0',
-                    transition: '0.3s all'
-                }
-            }>
+            >
                 {PlayerControls.playMusic ? (
                     <MdOutlinePauseCircleFilled
                         size="56px"

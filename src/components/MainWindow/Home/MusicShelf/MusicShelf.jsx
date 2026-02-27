@@ -42,5 +42,5 @@ export default function MusicShelf(props) {
 }
 
 MusicShelf.propTypes = {
-    title: PropTypes.string
+    title: PropTypes.string,
 }
